@@ -3,11 +3,6 @@ require 'features/shared/login_helper'
 include LoginHelper
 
 describe 'Session' do
-  # before(:each) do
-  #   ['Free', 'Basic'].each do |name|
-  #     FactoryGirl.create(:subscription, plan: name)
-  #   end
-  # end
 
   describe 'GET /' do
     it 'displays login link' do
