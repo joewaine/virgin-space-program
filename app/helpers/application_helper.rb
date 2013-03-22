@@ -3,7 +3,7 @@ module ApplicationHelper
     nav = ""
 
     if @auth.present?
-      nav += "<li>#{link_to(@auth.username, '/login', :method => :delete, :remote => true, :class => 'button tiny alert')}</li>"
+      nav += "<li>#{link_to(@auth.email, '/login', :method => :delete, :remote => true, :class => 'button tiny alert')}</li>"
     end
 
     nav
