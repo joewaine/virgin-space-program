@@ -1,0 +1,9 @@
+.row
+  .small-4
+    = link_to('Create Flight', new_flight_path, :class => 'button radius', :remote => true)
+    #form
+  .small-8
+.row
+  .small-12
+    #flights
+    = render :partial => 'flights'
