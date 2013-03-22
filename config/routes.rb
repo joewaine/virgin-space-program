@@ -1,7 +1,9 @@
 Virginspaceprogram::Application.routes.draw do
   root :to => 'home#index'
 
-resources :planes, :seats, :seatbooking
+get '/login' => 'session#new'
+
+resources :planes, :seats, :seatbookings, :users
 resources :flights do
   collection do
     get :search
@@ -9,4 +11,5 @@ resources :flights do
 end
 
 end
+
 
