@@ -1,14 +1,12 @@
 .row
   .large-3.columns
-    = form_for @flight, :remote => true do |f|
-      = f.label :origin
-      = f.text_field :origin, :autofocus => true
-      = f.label :destination
-      = f.text_field :destination
-      = f.label :number
-      = f.text_field :number
-      = f.label :date
-      = f.text_field :date
+    = form_for @plane, :remote => true do |f|
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = f.label :num_rows
+      = f.text_field :num_rows
+      = f.label :num_columns
+      = f.text_field :num_columns
       = link_to 'Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert'
       = f.submit nil, :class => 'button tiny radius success'
   .large-9.columns
