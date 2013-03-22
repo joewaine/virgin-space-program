@@ -15,5 +15,4 @@ class Seatbooking < ActiveRecord::Base
   belongs_to :seat
   belongs_to :flight
   belongs_to :user
-
 end
