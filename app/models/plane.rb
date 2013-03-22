@@ -11,7 +11,7 @@
 #
 
 class Plane < ActiveRecord::Base
-  attr_accessible :name, :number_rows, :number_columns
+  attr_accessible :name, :num_rows, :num_columns
   has_many :flights
   has_many :seats
 end
