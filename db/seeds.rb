@@ -22,6 +22,10 @@ f3 = Flight.create(origin: 'jupiter', destination: 'pluto', number: '000003', da
 f1.plane = p1
 f2.plane = p1
 f3.plane = p1
+f1.save
+f2.save
+f3.save
+
 
 s1 = Seat.create(row: 1, column: 1)
 s2 = Seat.create(row: 1, column: 2)
@@ -31,9 +35,11 @@ p1.seats << s1
 p1.seats << s2
 p1.seats << s3
 
-sb1 = Seatbooking.new
-sb2 = Seatbooking.new
-sb3 = Seatbooking.new
+
+
+sb1 = Seatbooking.create
+sb2 = Seatbooking.create
+sb3 = Seatbooking.create
 
 sb1.user = u1
 sb2.user = u2
@@ -46,7 +52,9 @@ sb3.flight = f1
 sb1.seat = s1
 sb2.seat = s2
 sb3.seat = s3
-
+sb1.save
+sb2.save
+sb3.save
 
 
 
