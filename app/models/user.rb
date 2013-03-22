@@ -13,5 +13,5 @@
 class User < ActiveRecord::Base
   has_secure_password
   attr_accessible :email, :password, :password_confirmation, :is_admin
-  has_many :seat_bookings
+  has_many :seatbookings
 end
