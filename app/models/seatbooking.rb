@@ -15,8 +15,4 @@ class Seatbooking < ActiveRecord::Base
   belongs_to :seat
   belongs_to :flight
   belongs_to :user
-<<<<<<< HEAD
-
-=======
->>>>>>> 5c80769460f4b3f1c8d2471452268e890548c3cd
 end
