@@ -7,11 +7,8 @@ Virginspaceprogram::Application.routes.draw do
 
 
 resources :planes, :seats, :seatbookings, :users
-resources :flights do
-  collection do
-    get :search
-  end
-end
+resources :flights
+resources :search
 
 end
 
