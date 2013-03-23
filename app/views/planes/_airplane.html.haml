@@ -1,0 +1,7 @@
+= @plane.name
+
+%table
+  - @plane.num_rows.times do |row|
+    %tr
+      - @plane.num_columns.times do |col|
+        %td= "#{(65 + row).chr}-#{(col + 1)}"
