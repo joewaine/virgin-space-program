@@ -1,6 +1,8 @@
 .row
   .large-3.columns
     = form_for @flight, :remote => true do |f|
+      = label_tag :type
+      = select_tag :type, options_for_select(@planes.map{ |i| [i.name, i.name] })
       = f.label :origin
       = f.text_field :origin, :autofocus => true
       = f.label :destination
