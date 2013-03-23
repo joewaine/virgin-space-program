@@ -8,6 +8,9 @@ class PlanesController < ApplicationController
   end
 
   def create
-    @plane = Plane.create(params[:plane])
+    # @plane = Plane.create(params[:plane])
+    # Plane.create(params[:plane])
+  @planes = Plane.order(:name)
+  Plane.create(params[:plane])
   end
 end
