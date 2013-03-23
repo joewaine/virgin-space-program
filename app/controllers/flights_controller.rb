@@ -8,6 +8,7 @@ class FlightsController < ApplicationController
   end
  def show
     @flight = Flight.find(params[:id])
+    @plane = @flight.plane
  end
  def create
   @flights = Flight.all
