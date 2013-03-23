@@ -1,8 +1,8 @@
 .row
   .large-3.columns
-    = form_tag 'flights/search', :remote => true do |f|
+    = form_tag search_index_path, :remote => true do |f|
       = label_tag :origin
-      = text_field_tag :origin, :autofocus => true
+      = text_field_tag :origin, nil, :autofocus => true
       = label_tag :destination
       = text_field_tag :destination
       = link_to 'Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert'
