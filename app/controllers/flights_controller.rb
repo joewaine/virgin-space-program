@@ -12,7 +12,6 @@ class FlightsController < ApplicationController
  def create
   @flights = Flight.order(:number)
   Flight.create(params[:flight])
-
  end
 end
 
