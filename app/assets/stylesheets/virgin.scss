@@ -1,0 +1,12 @@
+#seat_row
+{background-color: grey}
+
+#seat_row :hover
+{background-color: red}
+
+.tooltip {
+  border-bottom: 1px dotted #000000;
+  color: #000000; outline: none;
+  cursor: help; text-decoration: none;
+  position: relative;
+}

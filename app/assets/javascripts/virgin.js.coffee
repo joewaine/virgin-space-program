@@ -8,3 +8,5 @@ class Home
     $('#form').empty()
 
 $(document).ready(Home.document_ready)
+
+$("#seat_row").tooltip();
