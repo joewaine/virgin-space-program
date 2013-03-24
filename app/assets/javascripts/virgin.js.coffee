@@ -10,6 +10,6 @@ class Home
 
   @get_row_and_col: ->
     row = $(this).getAttribute('data-row-id')
-    col = $(this).attr('data-col-id')
+    col = $(this).attr('data-col-id')grid
 
 $(document).ready(Home.document_ready)
