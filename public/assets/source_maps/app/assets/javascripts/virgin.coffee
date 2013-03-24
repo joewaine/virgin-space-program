@@ -15,3 +15,5 @@ class Home
     console.log(col)
 
 $(document).ready(Home.document_ready)
+
+$("#seat_row").tooltip();
