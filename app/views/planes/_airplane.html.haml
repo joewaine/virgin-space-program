@@ -1,7 +1,7 @@
-= @planes.each do |plane|
+- @planes.each do |plane|
   %table
     = plane.name
-    - plane.num_rows.times do |row|
+    - plane.num_rows.to_i.times do |row|
       %tr
-        - plane.num_columns.times do |col|
+        - plane.num_columns.to_i.times do |col|
           %td= "#{(65 + row).chr}-#{(col + 1)}"
