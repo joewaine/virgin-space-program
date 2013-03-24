@@ -1,6 +1,7 @@
 %table
   = @plane.name
   - @plane.num_rows.times do |row|
-    %tr#seat_row{:title => @auth.email}
+    %tr{:'data-row-id' => "#{(65 + row).chr}"}
       - @plane.num_columns.times do |col|
-        %td#seat_column= "#{(65 + row).chr}-#{(col + 1)}"
+        %td{:'data-col-id' => "#{(col + 1)}"}
+          = "#{(65 + row).chr}-#{(col + 1)}"
