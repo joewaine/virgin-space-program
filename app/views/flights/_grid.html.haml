@@ -1,4 +1,4 @@
-%table
+%table{:'data-flight-id' => "#{@flight.id}"}
   = @plane.name
   - @plane.num_rows.times do |row|
     %tr{:'data-row-id' => "#{(65 + row).chr}"}

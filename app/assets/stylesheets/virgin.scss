@@ -1,6 +1,6 @@
 
 
-body 
+body
 {
   background: url('spacebackground.jpg');
 }
@@ -50,7 +50,7 @@ a
 }
 
 
-.top-bar ul 
+.top-bar ul
 {
 float: right;
 margin: 5px 15px;
@@ -59,4 +59,9 @@ margin: 5px 15px;
 .subheader
 {
   color: rgba(0,0,0, .5);
+}
+
+.social
+{
+  display: inline-block;
 }
