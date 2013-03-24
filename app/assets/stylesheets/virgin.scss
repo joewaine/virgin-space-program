@@ -3,12 +3,14 @@
 
 body
 {
-  background: url('spacebackground.jpg');
+  background: url('spacebackground.jpg');}
+
 #seat_row
-{background-color: grey}
+{
+background-color: grey;}
 
 #seat_row :hover
-{background-color: red}
+{background-color: red;}
 
 .tooltip {
   border-bottom: 1px dotted #000000;
@@ -65,7 +67,7 @@ color: white;
 cursor: default;
 }
 
-// .top-bar ul
+
 
 .button.tiny.radius
 {
@@ -73,7 +75,7 @@ cursor: default;
   border: 0px;
   border-radius: 0px;
   color: #222;
-text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 
@@ -86,75 +88,9 @@ text-transform: capitalize;
 {
   display: inline-block;
 }
-h6.subheader{
+
+h6.subheader
+{
   font-weight: 400;
   font-size: 12px;
 }
-
-.styled-select
-{  overflow: hidden;
-   background: url(http://i.imgur.com/aONx25D.jpg) no-repeat right #ddd;
-   border: 1px solid #ccc;}
-
-
-
-// body
-// {
-//   background: url('spacebackground.jpg');
-// }
-
-// .button
-// {
-//   background-color: #000000;
-//   border-radius: 10px;
-//   padding: 2px 2px;
-//   margin: 10px auto;
-//   -moz-box-shadow: 0 0 2px 2px #888;
-//   -webkit-box-shadow: 0 0 2px 2px#888;
-//   box-shadow: 0 0 2px 2px #888;
-//   color: #0099cc;
-//   font-family: 'Lato', sans-serif;
-//   font-weight: 400;
-//   opacity: .6;
-//   border: 1px solid black;
-//   font-size: 20px;
-//   text-align: center;
-// }
-
-// a
-// {
-//   background-color: #990000;
-//   border-radius: 10px;
-//   padding: 2px 2px;
-//   margin: 10px auto;
-//   -moz-box-shadow: 0 0 2px 2px #888;
-//   -webkit-box-shadow: 0 0 2px 2px#888;
-//   box-shadow: 0 0 2px 2px #888;
-//   color: #FFFFFF;
-//   font-family: 'Lato', sans-serif;
-//   font-weight: 400;
-//   opacity: .6;
-//   border: 1px solid black;
-//   font-size: 20px;
-//   text-align: center;
-// }
-
-// .top-bar
-// {
-//   height: 60px;
-//   border-radius: 50px;
-//   background-color: rgba(255,255,255,.2);
-
-// }
-
-
-// .top-bar ul
-// {
-// float: right;
-// margin: 5px 15px;
-// }
-
-// .subheader
-// {
-//   color: rgba(0,0,0, .5);
-// }
