@@ -1,6 +1,8 @@
 .row
   .large-3.columns
     = form_for @flight, :remote => true do |f|
+      = label_tag :type
+      = select_tag :type, options_for_select(@planes.map{ |i| [i.name, i.name] })
       = f.label :origin
       = f.text_field :origin, :autofocus => true
       = f.label :destination
@@ -9,6 +11,6 @@
       = f.text_field :number
       = f.label :date
       = f.text_field :date
-      = link_to 'Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert'
       = f.submit nil, :class => 'button tiny radius success'
+      = link_to 'Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert'
   .large-9.columns

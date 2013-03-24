@@ -5,14 +5,8 @@ Virginspaceprogram::Application.routes.draw do
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
-
 resources :planes, :seats, :seatbookings, :users
-resources :flights do
-  collection do
-    get :search
-  end
-end
+resources :flights
+resources :search
 
 end
-
-

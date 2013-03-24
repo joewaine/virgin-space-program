@@ -1,20 +1,15 @@
 - if @flights.present?
   %table
     %tr
-      %th Type of Plane
       %th Date
-      %th Flight Number
+      %th Flight #
       %th From-To
       %th Plane
+      %th Seat
     - @flights.each do |flight|
       %tr
-        %th= flight.plane
         %td= flight.date
         %td= link_to(flight.number, flight)
         %td= flight.origin + ' > ' + flight.destination
-<<<<<<< HEAD
         %td= flight.plane_id
-
-=======
-        %td= flight.plane_id
->>>>>>> f406fa7ab137a8313a7e699ca0933a1181ddeb32
+        / %td= flight.seat
