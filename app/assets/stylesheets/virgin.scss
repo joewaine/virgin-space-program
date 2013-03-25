@@ -26,7 +26,7 @@ background-color: grey;}
   font-family: 'Arvo', serif;
   font-weight: 700;
   color: rgba(0,0,0, .5);
-  text-transform:uppercase;
+  text-transform: uppercase;
 
 }
 
@@ -114,7 +114,7 @@ padding: 2px 2px;
 float: right;
 margin: 2px 2px;
 padding: 2px 2px;
-
+}
 
 .button.tiny.radius
 {
@@ -127,18 +127,10 @@ padding: 2px 2px;
 }
 
 
-.subheader
-{
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-  color: rgba(0,0,0, .5);
-}
-
-
 .formbox
 {
   border-radius: 10px;
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255,255,255, .4);
   padding: 10px 5px;
   margin: 10px auto;
   max-width: auto;
@@ -150,11 +142,5 @@ padding: 2px 2px;
 .social
 {
   display: inline-block;
-}
-
-h6.subheader
-{
-  font-weight: 400;
-  font-size: 12px;
 }
 
