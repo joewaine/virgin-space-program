@@ -1,4 +1,4 @@
-$('#nav').empty().append('<%=j render(:partial => 'layouts/nav') %>');
-$('#anonymous').empty().append('<%=j render(:partial => 'home/anonymous') %>');
-$('#form').empty();
-$('#flights').empty().append('<%=j render(:partial => 'flights/flights') %>');
+$('#nav').fadeOut('fast').empty().append('<%=j render(:partial => 'layouts/nav') %>').slideDown('slow');
+$('#anonymous').fadeOut('fast').empty().append('<%=j render(:partial => 'home/anonymous') %>').slideDown('slow');
+$('#form').fadeOut('fast').empty();
+$('#flights').fadeOut('fast').empty().append('<%=j render(:partial => 'flights/flights') %>').slideDown('slow');

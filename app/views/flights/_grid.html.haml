@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - if @intersection.present?
   %h6
     %small= "#{pluralize(intersection.count, 'seat')} chosen were already reserved and thus were not booked."
@@ -16,3 +17,12 @@
 = button_to("Book It!","#", :id => "buy_ticket")
 
 
+=======
+%table{:'data-flight-id' => "#{@flight.id}"}
+  = @plane.name
+  - @plane.num_rows.times do |row|
+    %tr{:'data-row-id' => "#{(65 + row).chr}"}
+      - @plane.num_columns.times do |col|
+        %td{:'data-col-id' => "#{(col + 1)}"}
+          = "#{(65 + row).chr}-#{(col + 1)}"
+>>>>>>> 4c225df85cbdee67dec880558f39f07ab935125c
