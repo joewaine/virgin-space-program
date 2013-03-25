@@ -1,5 +1,6 @@
 .row
   .large-3.columns
+    %br
     = form_tag search_index_path, :action => 'create', :remote => true do |f|
       = label_tag :origin
       = select_tag :origin, options_for_select(@flights.map{ |i| [i.origin, i.origin] })

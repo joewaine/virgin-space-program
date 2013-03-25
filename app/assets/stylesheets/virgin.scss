@@ -1,8 +1,11 @@
-
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
 
 body 
 {
   background: url('spacebackground.jpg');
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+
 }
 
 .button
@@ -10,12 +13,12 @@ body
   background-color: #000000;
   border-radius: 10px;
   padding: 2px 2px;
-  margin: 10px auto;
+  margin: 2px 2px;
   -moz-box-shadow: 0 0 2px 2px #888;
   -webkit-box-shadow: 0 0 2px 2px#888;
   box-shadow: 0 0 2px 2px #888;
   color: #0099cc;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   opacity: .6;
   border: 1px solid black;
@@ -28,12 +31,12 @@ a
   background-color: #990000;
   border-radius: 10px;
   padding: 2px 2px;
-  margin: 10px auto;
+  margin: 2px 2px;
   -moz-box-shadow: 0 0 2px 2px #888;
   -webkit-box-shadow: 0 0 2px 2px#888;
   box-shadow: 0 0 2px 2px #888;
   color: #FFFFFF;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   opacity: .6;
   border: 1px solid black;
@@ -50,13 +53,34 @@ a
 }
 
 
+ul.button-group
+{
+margin: 2px 10px;
+padding: 2px 2px;
+}
+
 .top-bar ul 
 {
 float: right;
-margin: 5px 15px;
+margin: 2px 2px;
+padding: 2px 2px;
 }
 
 .subheader
 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   color: rgba(0,0,0, .5);
 }
+
+.formbox
+{
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.4);
+  padding: 10px 5px;
+  margin: 10px auto;
+  max-width: auto;
+}
+
+
+

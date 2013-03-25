@@ -11,6 +11,5 @@ class Home
   @get_row_and_col: ->
     row = $(this).getAttribute('data-row-id')
     col = $(this).attr('data-col-id')
-    console.log(row)
 
 $(document).ready(Home.document_ready)
