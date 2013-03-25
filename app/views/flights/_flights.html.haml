@@ -8,12 +8,8 @@
       %th Plane
     - @flights.each do |flight|
       %tr
-        %th= flight.plane
+        %th= flight.plane.name
         %td= flight.date
         %td= link_to(flight.number, flight)
         %td= flight.origin + ' > ' + flight.destination
         %td= flight.plane_id
-<<<<<<< HEAD
-        %td= flight.plane_id
-=======
->>>>>>> 4c225df85cbdee67dec880558f39f07ab935125c

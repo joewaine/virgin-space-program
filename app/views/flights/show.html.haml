@@ -1,18 +1,16 @@
-= @flight.origin
-%br
-%br
-%p to
-= @flight.destination
-%br
-%br
-= @flight.plane_id
-%br
-%br
-= @flight.number
-%br
-%br
-= @flight.date
-%br
-%br
+%h2 Flight Table
+
+%table
+  %tr
+    %th Origin
+    %th Destination
+    %th Flight Number
+    %th Date
+  - @flights.each do |flight|
+    %tr
+      %th= flight.origin
+      %td= flight.destination
+      %td= flight.number
+      %td= flight.date
 #grid
   = render :partial => 'grid'
