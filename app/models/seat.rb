@@ -13,5 +13,5 @@
 class Seat < ActiveRecord::Base
   attr_accessible :row, :column
   belongs_to :plane
-  has_many :seat_bookings
+  has_many :seatbookings
 end

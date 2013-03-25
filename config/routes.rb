@@ -6,7 +6,12 @@ Virginspaceprogram::Application.routes.draw do
   delete '/login' => 'session#destroy'
 
 resources :planes, :seats, :seatbookings, :users
-resources :flights
+resources :flights do
+  collection do
+    post 'purchase'
+  end
+end
+
 resources :search
 
 end

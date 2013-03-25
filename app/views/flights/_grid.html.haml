@@ -1,8 +1,18 @@
-%table
-  = @plane.name
-  - @plane.num_rows.times do |row|
-    %tr{:'data-row-id' => "#{(65 + row).chr}"}
-      - @plane.num_columns.times do |col|
-        %td{:'data-col-id' => "#{(col + 1)}"}
-          = "#{(65 + row).chr}-#{(col + 1)}"
+- if @intersection.present?
+  %h6
+    %small= "#{pluralize(intersection.count, 'seat')} chosen were already reserved and thus were not booked."
+%table{:'data-flight-id' => "#{@flight.id}"}
+  - @plane.num_rows.times do |plane_row|
+    %tr
+      - @plane.num_columns.times do |plane_col|
+        - seat = @plane.seats.where(column: plane_col, row: plane_row).first
+        %td{:'data-seat-id' => "#{seat.try(:id)}"}
+          - if seat.present?
+            - if seat.seatbookings.where(flight_id: @flight.id).first.present?
+              .taken= "#{seat.seatbookings.where(flight_id: @flight.id).first.user.email}"
+          - else
+            = "#{(65 + plane_row).chr}-#{(plane_col + 1)}"
+
+= button_to("Book It!","#", :id => "buy_ticket")
+
 

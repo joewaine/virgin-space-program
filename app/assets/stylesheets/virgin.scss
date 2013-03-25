@@ -1,8 +1,12 @@
 
 
-body 
+body
 {
   background: url('spacebackground.jpg');
+}
+
+.taken {
+  background-color: red;
 }
 
 .button
@@ -21,6 +25,14 @@ body
   border: 1px solid black;
   font-size: 20px;
   text-align: center;
+}
+
+.chosen {
+  background-color: gray
+}
+
+#grid td:hover{
+  background-color: gray
 }
 
 a
@@ -50,7 +62,7 @@ a
 }
 
 
-.top-bar ul 
+.top-bar ul
 {
 float: right;
 margin: 5px 15px;

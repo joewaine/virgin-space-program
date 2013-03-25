@@ -15,5 +15,5 @@
 class Flight < ActiveRecord::Base
   attr_accessible :origin, :destination, :number, :date
   belongs_to :plane
-  has_many :seat_bookings
+  has_many :seatbookings
 end

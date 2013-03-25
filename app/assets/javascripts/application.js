@@ -8,3 +8,4 @@
 //= require 'morris/morris.min.js'
 //= require 'underscore-min.js'
 //= require 'virgin.js'
+//= require 'vi.js'
