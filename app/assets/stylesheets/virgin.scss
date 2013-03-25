@@ -1,14 +1,36 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
 
-body 
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+
+
+body
 {
-  background: url('spacebackground.jpg');
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
+  background: url('spacebackground.jpg');}
+
+#seat_row
+{
+background-color: grey;}
+
+#seat_row :hover
+{background-color: red;}
+
+.tooltip {
+  border-bottom: 1px dotted #000000;
+  color: #000000; outline: none;
+  cursor: help; text-decoration: none;
+  position: relative;
+}
+
+
+.subheader
+{
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  color: #fff;
+  text-transform:uppercase;
 
 }
 
-.button
+body
 {
   background-color: #000000;
   border-radius: 10px;
@@ -42,14 +64,42 @@ a
   border: 1px solid black;
   font-size: 20px;
   text-align: center;
+  background: url('http://i.imgur.com/Wxe5F5x.jpg') no-repeat center center fixed;
+  /*background: url('http://i.imgur.com/Hx0mb18.jpg') no-repeat center center fixed;*/
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  // font-style: italic;
+  font-size: 14px;
+  border: 0px;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 60px;
+/*  transition:rotate 2s;
+  -webkit-transform:rotate(-2deg);
+-moz-transform:rotate(-180deg);
+-webkit-transform:rotate(-180deg);
+-o-transform:rotate(-180deg);*/
+
 }
 
-.top-bar
+table
 {
-  height: 60px;
-  border-radius: 50px;
-  background-color: rgba(255,255,255,.2);
+  background: transparent;
+  border: 0px;
+}
 
+select
+{background: transparent;
+width: 80px;
+border: 0px solid;
+white-space: pre;
+color: white;
+cursor: default;
 }
 
 
@@ -64,7 +114,18 @@ padding: 2px 2px;
 float: right;
 margin: 2px 2px;
 padding: 2px 2px;
+
+
+.button.tiny.radius
+{
+  background: rgba(255, 255, 255, .9);
+  border: 0px;
+  border-radius: 0px;
+  color: #222;
+  text-transform: capitalize;
+
 }
+
 
 .subheader
 {
@@ -72,6 +133,7 @@ padding: 2px 2px;
   font-weight: 400;
   color: rgba(0,0,0, .5);
 }
+
 
 .formbox
 {
@@ -83,4 +145,16 @@ padding: 2px 2px;
 }
 
 
+
+
+.social
+{
+  display: inline-block;
+}
+
+h6.subheader
+{
+  font-weight: 400;
+  font-size: 12px;
+}
 

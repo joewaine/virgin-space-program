@@ -180,6 +180,9 @@ GEM
       multi_json (~> 1.0)
       rubyzip
       websocket (~> 1.0.4)
+    shareable (0.0.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     slop (3.4.4)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -227,4 +230,5 @@ DEPENDENCIES
   rb-fsevent
   rspec-rails
   sass-rails (~> 3.2.3)
+  shareable
   uglifier (>= 1.0.3)

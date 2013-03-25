@@ -1,8 +1,7 @@
-%table
+%table{:'data-flight-id' => "#{@flight.id}"}
   = @plane.name
   - @plane.num_rows.times do |row|
     %tr{:'data-row-id' => "#{(65 + row).chr}"}
       - @plane.num_columns.times do |col|
         %td{:'data-col-id' => "#{(col + 1)}"}
           = "#{(65 + row).chr}-#{(col + 1)}"
-
